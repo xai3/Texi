@@ -10,6 +10,10 @@
 		B6EEBCD81C142BD900C387D1 /* Texi.h in Headers */ = {isa = PBXBuildFile; fileRef = B6EEBCD71C142BD900C387D1 /* Texi.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B6EEBCDF1C142BD900C387D1 /* Texi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6EEBCD41C142BD900C387D1 /* Texi.framework */; };
 		B6EEBCE41C142BD900C387D1 /* TexiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6EEBCE31C142BD900C387D1 /* TexiTests.swift */; };
+		B6EEBCEF1C142BFC00C387D1 /* StringElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6EEBCEE1C142BFB00C387D1 /* StringElement.swift */; };
+		B6EEBCF11C142C1300C387D1 /* Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6EEBCF01C142C1300C387D1 /* Style.swift */; };
+		B6EEBCF31C142C3D00C387D1 /* StyledString.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6EEBCF21C142C3D00C387D1 /* StyledString.swift */; };
+		B6EEBCF51C142C5C00C387D1 /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6EEBCF41C142C5C00C387D1 /* Operators.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +33,10 @@
 		B6EEBCDE1C142BD900C387D1 /* TexiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TexiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6EEBCE31C142BD900C387D1 /* TexiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TexiTests.swift; sourceTree = "<group>"; };
 		B6EEBCE51C142BD900C387D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B6EEBCEE1C142BFB00C387D1 /* StringElement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringElement.swift; sourceTree = "<group>"; };
+		B6EEBCF01C142C1300C387D1 /* Style.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Style.swift; sourceTree = "<group>"; };
+		B6EEBCF21C142C3D00C387D1 /* StyledString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StyledString.swift; sourceTree = "<group>"; };
+		B6EEBCF41C142C5C00C387D1 /* Operators.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Operators.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +81,10 @@
 			children = (
 				B6EEBCD71C142BD900C387D1 /* Texi.h */,
 				B6EEBCD91C142BD900C387D1 /* Info.plist */,
+				B6EEBCF01C142C1300C387D1 /* Style.swift */,
+				B6EEBCEE1C142BFB00C387D1 /* StringElement.swift */,
+				B6EEBCF21C142C3D00C387D1 /* StyledString.swift */,
+				B6EEBCF41C142C5C00C387D1 /* Operators.swift */,
 			);
 			path = Texi;
 			sourceTree = "<group>";
@@ -196,6 +208,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B6EEBCEF1C142BFC00C387D1 /* StringElement.swift in Sources */,
+				B6EEBCF51C142C5C00C387D1 /* Operators.swift in Sources */,
+				B6EEBCF11C142C1300C387D1 /* Style.swift in Sources */,
+				B6EEBCF31C142C3D00C387D1 /* StyledString.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -310,30 +326,37 @@
 		B6EEBCE91C142BD900C387D1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = Texi/Info.plist;
+				INSTALL_OWNER = yukiasai;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = me.yukia.Texi;
+				PRODUCT_BUNDLE_IDENTIFIER = yukiasai.Texi;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		B6EEBCEA1C142BD900C387D1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = Texi/Info.plist;
+				INSTALL_OWNER = yukiasai;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = me.yukia.Texi;
+				PRODUCT_BUNDLE_IDENTIFIER = yukiasai.Texi;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
@@ -344,7 +367,7 @@
 			buildSettings = {
 				INFOPLIST_FILE = TexiTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = me.yukia.TexiTests;
+				PRODUCT_BUNDLE_IDENTIFIER = yukiasai.TexiTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -354,7 +377,7 @@
 			buildSettings = {
 				INFOPLIST_FILE = TexiTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = me.yukia.TexiTests;
+				PRODUCT_BUNDLE_IDENTIFIER = yukiasai.TexiTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

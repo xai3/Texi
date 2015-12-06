@@ -2,8 +2,8 @@
 //  Texi.h
 //  Texi
 //
-//  Created by yuki on 2015/12/06.
-//  Copyright © 2015年 yukia.me. All rights reserved.
+//  Created by yukiasai on 2015/12/06.
+//  Copyright (c) 2015 yukiasai. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
