@@ -1,6 +1,6 @@
 # Texi
 
-Texi is a library that you can easily build NSAttributedString.
+Texi is a library that you can easily build NSAttributedString. Written in Swift.
 
 ### Example
 
