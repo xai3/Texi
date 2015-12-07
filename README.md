@@ -8,7 +8,7 @@ Texi is a library that you can easily build NSAttributedString. Written in Swift
 
 ``` swift
 let bold = Style(color: UIColor.blackColor(), font: UIFont.boldSystemFontOfSize(17))
-var styledString = "Bold text".stylize(bold)
+var styledString = "Bold text ".stylize(bold) + "Plain text"
 label.attributedText = styledString.attributedString
 ```
 
