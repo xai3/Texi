@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name = 'Texi'
-  s.version = '0.1'
+  s.version = '0.1.1'
   s.license = 'MIT'
   s.homepage = 'https://github.com/yukiasai/'
   s.summary = 'Texi is a library that you can easily build NSAttributedString.'
