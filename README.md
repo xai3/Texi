@@ -28,4 +28,4 @@ label.attributedText = styledString.attributedString
 
 ## License
 
-Shoyu is released under the MIT license. See LICENSE for details.
+Texi is released under the MIT license. See LICENSE for details.
